@@ -30,3 +30,5 @@ Schema json bundles can be obtained by invoking the Schema Compiler with the `--
 The Snapshot Migrator is currently implemented as a commandlet and can be invoked as any other UE4 commandlet can. E.g., from the commandline: `path/to/UE4/Engine/Binaries/Win64/UE4Editor-Cmd.exe path/to/UE4/{Project}/Game/{Project}.uproject -Run=SnapshotMigrator`
 
 By default, the migrator will expect to find the **source snapshots** and the **source bundle** at `{project spatial dir}/tmp/artifacts` and the **target bundle** at `{project spatial dir}/build/assembly/schema`. This can be overridden by passing `-OldArtifactsDir` or `-CompiledSchemaDir`, respectively.
+
+For a visual, high-level overview of how the migrator works, please see the [entity migration flow](./Resources/EntityMigrationFlow.svg) and [snapshot migration flow](./Resources/HighLevelSnapshotMigrationFlow.svg) diagrams.
